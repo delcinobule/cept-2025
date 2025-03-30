@@ -9,11 +9,21 @@
   text-align: left;
 }
 
+#services .items .item h3 {
+  font-size: 1.2rem;
+}
+
 /* Position icon */
 #services .items .item i {
-  margin-right: 1.3rem;
+  margin-right: 3rem;
   align-self: center;
   margin-bottom: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.form-group label {
+  font-size: 1rem;
 }
 
 /* tablet */
@@ -35,17 +45,33 @@
 
 /* Smartphones */
 @media (max-width: 500px) {
-  #navbar {
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+
+  .l-heading {
+    font-size: 2rem;
   }
 
-  #navbar .logo {
+  .m-heading {
+    font-size: 1.3rem;
+  }
+
+  #navbar {
+    position: fixed;
+    height: 100px;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  /* #navbar .logo {
     margin-bottom: 0.5rem;
     text-align: center;
-  }
+  } */
 
   #navbar .logo img {
     width: 100%;
@@ -65,13 +91,25 @@
     height: 100vh;
     /* display: none; */
   }
-#navbar ul label #theme{
- font-size: 1rem;
- padding: 0.1rem;
-}
-#navbar ul label #theme option{
- font-size: 1rem;
-}
+
+  #navbar ul label select {
+    position: relative;
+    top: 5vh;
+    right: 175px;
+    font-size: 1rem;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #navbar ul label #theme {
+    width: 100%;
+  }
+
+  #navbar ul label #theme option {
+    font-size: 1rem;
+    width: 100%;
+  }
+
   #navbar ul li {
     padding-blocK: 0.4rem;
   }
@@ -98,6 +136,18 @@
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  #services .items .item i {
+    color: #057ac9;
+    background: transparent;
+  }
+
+  #contact .contact-form input,
+  #contact .contact-form textarea {
+    width: 100%;
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+
   #about {
     display: block;
   }
@@ -121,6 +171,11 @@
   #contact .map {
     height: 200px;
     border-top: 4px solid #333;
+  }
+
+  .accordion .questions .label {
+    padding: 0.5rem;
+    font-size: 1rem;
   }
 
   footer .footer-content {
